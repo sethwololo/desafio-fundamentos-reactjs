@@ -24,10 +24,11 @@ export const CardContainer = styled.section`
 `;
 
 export const Card = styled.div`
-  background: ${({ total }: CardProps): string => (total ? '#FF872C' : '#fff')};
+  background: ${({ total }: CardProps): string =>
+    total ? '#8a67d5' : '#1f1f1f'};
   padding: 22px 32px;
   border-radius: 5px;
-  color: ${({ total }: CardProps): string => (total ? '#fff' : '#363F5F')};
+  color: ${({ total }: CardProps): string => (total ? '#fff' : '#5c6ea3')};
 
   header {
     display: flex;
@@ -66,13 +67,13 @@ export const TableContainer = styled.section`
     td {
       padding: 20px 32px;
       border: 0;
-      background: #fff;
+      background: #1f1f1f;
       font-size: 16px;
       font-weight: normal;
       color: #969cb3;
 
       &.title {
-        color: #363f5f;
+        color: #5c6ea3;
       }
 
       &.income {

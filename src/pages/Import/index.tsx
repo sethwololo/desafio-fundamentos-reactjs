@@ -10,7 +10,7 @@ import { Container, Title, ImportFileContainer, Footer } from './styles';
 
 import alert from '../../assets/alert.svg';
 import api from '../../services/api';
-import formatValue from '../../utils/formatValue';
+// import formatValue from '../../utils/formatValue';
 
 interface FileProps {
   file: File;
@@ -36,13 +36,13 @@ const Import: React.FC = () => {
   }
 
   function submitFile(files: File[]): void {
-    files.map((file): void => {
+    files.map(file => {
       const newFile: FileProps = {
         file,
         name: file.name,
         readableSize: fileSize(file.size),
       };
-      setUploadedFiles([...uploadedFiles, newFile]);
+      return setUploadedFiles([...uploadedFiles, newFile]);
     });
   }
 

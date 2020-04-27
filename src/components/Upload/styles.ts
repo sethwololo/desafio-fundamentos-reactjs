@@ -22,6 +22,7 @@ export const DropContainer = styled.div.attrs({
   border: 1.5px dashed #969cb3;
   border-radius: 5px;
   cursor: pointer;
+  background: #242424;
 
   transition: height 0.2s ease;
 
@@ -33,7 +34,7 @@ export const DropContainer = styled.div.attrs({
 `;
 
 const messageColors = {
-  default: '#5636D3',
+  default: '#ddc55a',
   error: '#e83f5b',
   success: '#12a454',
 };
